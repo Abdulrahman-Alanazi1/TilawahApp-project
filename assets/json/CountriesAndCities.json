@@ -1,0 +1,118 @@
+{
+    "countries": [
+        {
+            "name": "Afghanistan",
+            "name_ar":"أفغانستان",
+            "ISO2":"AF",
+            "cities":[
+                {
+                    "name": "Kabul",
+                    "name_ar":"كابل",
+                    "latitude": 34.555347,
+                    "longitude":69.207489
+                },
+                {
+                    "name": "Herat",
+                    "name_ar": "هراة",
+                    "latitude":34.352863,
+                    "longitude":62.204029
+                }
+            ]
+        },
+        {
+            "name":"Albania",
+            "name_ar":"ألبانيا",
+            "ISO2":"AL",
+            "cities":[
+                {
+                    "name":"Tirana",
+                    "name_ar":"تيرانا",
+                    "latitude": 41.327545,
+                    "longitude": 19.818699
+                },
+                {
+                    "name":"Shkodra",
+                    "name_ar":"شكودرا",
+                    "latitude": 42.069298,
+                    "longitude": 19.503256
+                }
+            ]
+        },
+        {
+            "name":"Algeria",
+            "name_ar":"الجزائر",
+            "ISO2":"DZ",
+            "cities":[
+                {
+                    "name":"Algiers",
+                    "name_ar":"الجزائر",
+                    "latitude": 36.753769,
+                    "longitude": 3.058756
+                },
+                {
+                    "name":"Constantine",
+                    "name_ar":"قسطنطينه",
+                    "latitude": 36.3500,
+                    "longitude": 6.6000
+                }
+            ]
+        },
+        {
+            "name":"Argentina",
+            "name_ar":"الأرجنتين",
+            "ISO2":"AR",
+            "cities":[
+                {
+                    "name":"Buenos Aires",
+                    "name_ar":"بوينس آيرس",
+                    "latitude": -34.6033,
+                    "longitude": -58.3817
+                },
+                {
+                    "name":"Córdoba",
+                    "name_ar":"قرطبة",
+                    "latitude": -31.4167,
+                    "longitude": -64.1833
+                }
+            ]
+        },
+        {
+            "name":"Azerbaijan",
+            "name_ar":"أذربيجان",
+            "ISO2":"AZ",
+            "cities":[
+                {
+                    "name":"Baku",
+                    "name_ar":"باكو",
+                    "latitude": 40.3953,
+                    "longitude": 49.8822
+                },
+                {
+                    "name":"Sumqayit",
+                    "name_ar":"سومقاييت",
+                    "latitude": 40.5897,
+                    "longitude": 49.6686
+                }
+            ]
+        },
+        {
+            "name":"Bahrain",
+            "name_ar":"البحرين",
+            "ISO2":"BH",
+            "cities":[
+                {
+                    "name":"Manama",
+                    "name_ar":"المنامه",
+                    "latitude": 26.2250,
+                    "longitude": 50.5775
+                },
+                {
+                    "name":"Al Muḩarraq",
+                    "name_ar":"المحرق",
+                    "latitude": 26.2500,
+                    "longitude": 50.6167
+                }
+            ]
+        }
+    ]
+}

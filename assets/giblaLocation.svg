@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<svg height="32" id="svg874" version="1.1" viewBox="0 0 32 32" width="32" xml:space="preserve"
+    xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
+    <defs id="defs878">
+        <marker id="DotM" orient="auto" refX="0.0" refY="0.0" style="overflow:visible">
+            <path
+                d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+                id="path1360"
+                style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+                transform="scale(0.4) translate(7.4, 1)" />
+        </marker>
+    </defs>
+    <g id="g1252" style="display:inline">
+        <path d="M 5.0000008,12.077547 V 23.923078 L 16,29.000001 27,23.923078 V 12.077547" id="path4797"
+            style="opacity:1;fill:#515267;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;paint-order:fill markers stroke;stroke-opacity:1;fill-opacity:1" />
+        <path d="M 5,12.928266 5.0000008,12 16,6.923077 27,12 v 0.928266" id="path4799"
+            style="opacity:1;fill:#515267;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke-opacity:1;paint-order:fill markers stroke" />
+        <path d="m 16.000001,9.3464446 6.265895,2.6107894 -6.265895,2.610789 -6.2658957,-2.610789 z" id="path1238"
+            style="opacity:1;fill:#dbbd5f;fill-opacity:1;stroke:none;stroke-width:1.48102999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke-opacity:1;paint-order:fill markers stroke" />
+        <path d="m 5,12.077547 10.999999,5.076923 11,-5.076923" id="path1242"
+            style="opacity:1;fill:none;stroke:#1f1f1f;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;paint-order:fill markers stroke;stroke-opacity:1" />
+        <path d="M 5.0000008,12.005189 16,6.9282662 27,12.005189" id="path1244"
+            style="opacity:1;fill:none;stroke:#1f1f1f;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;paint-order:fill markers stroke;stroke-opacity:1" />
+        <path d="m 5,15.227819 10.999999,5.076923 11,-5.076923" id="path1246"
+            style="opacity:1;fill:none;stroke:#dbbd5f;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;paint-order:fill markers stroke;stroke-opacity:1" />
+        <path d="m 5,18.094921 10.999999,5.076922 m 7.890842,-3.641927 3.109158,-1.434995" id="path1248"
+            style="opacity:1;fill:none;stroke:#dbbd5f;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;paint-order:fill markers stroke;stroke-opacity:1" />
+        <path d="m 18.538461,27.308317 v -5.076922 l 3.384615,-1.692308 v 5.264957" id="path1250"
+            style="opacity:1;fill:#1f1f1f;stroke:#1f1f1f;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;paint-order:fill markers stroke;stroke-opacity:1;fill-opacity:1" />
+        <path
+            d="m 19.025405,5 c 0,1.7686628 -3.048153,7.514675 -3.048153,7.514675 0,0 -3.048153,-5.7460122 -3.048153,-7.514675 0,-1.7686628 1.364705,-3.2024473 3.048153,-3.2024473 1.683447,0 3.048153,1.4337845 3.048153,3.2024473 z"
+            id="path1254"
+            style="opacity:1;fill:#d02d3a;stroke:#1f1f1f;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke;stroke-opacity:1;fill-opacity:1" />
+        <circle cx="16.052561" cy="5.0199437" id="path1257" r="0.99723649"
+            style="opacity:1;fill:#1f1f1f;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke;fill-opacity:1" />
+        <path d="M 5.0000008,12.077547 V 23.923078 L 16,29.000001 27,23.923078 V 12.077547" id="path1236"
+            style="opacity:1;fill:none;stroke:#1f1f1f;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;paint-order:fill markers stroke;stroke-opacity:1" />
+        <path d="M 16,17.15447 V 29" id="path1240"
+            style="opacity:1;fill:none;stroke:#1f1f1f;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;paint-order:fill markers stroke;stroke-opacity:1" />
+    </g>
+</svg>
