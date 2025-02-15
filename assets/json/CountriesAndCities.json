@@ -3,7 +3,7 @@
         {
             "name": "Afghanistan",
             "name_ar":"أفغانستان",
-            "ISO2":"AF",
+            "ISO":"AF",
             "cities":[
                 {
                     "name": "Kabul",
@@ -22,7 +22,7 @@
         {
             "name":"Albania",
             "name_ar":"ألبانيا",
-            "ISO2":"AL",
+            "ISO":"AL",
             "cities":[
                 {
                     "name":"Tirana",
@@ -41,7 +41,7 @@
         {
             "name":"Algeria",
             "name_ar":"الجزائر",
-            "ISO2":"DZ",
+            "ISO":"DZ",
             "cities":[
                 {
                     "name":"Algiers",
@@ -60,7 +60,7 @@
         {
             "name":"Argentina",
             "name_ar":"الأرجنتين",
-            "ISO2":"AR",
+            "ISO":"AR",
             "cities":[
                 {
                     "name":"Buenos Aires",
@@ -79,7 +79,7 @@
         {
             "name":"Azerbaijan",
             "name_ar":"أذربيجان",
-            "ISO2":"AZ",
+            "ISO":"AZ",
             "cities":[
                 {
                     "name":"Baku",
@@ -98,7 +98,7 @@
         {
             "name":"Bahrain",
             "name_ar":"البحرين",
-            "ISO2":"BH",
+            "ISO":"BH",
             "cities":[
                 {
                     "name":"Manama",
@@ -111,6 +111,45 @@
                     "name_ar":"المحرق",
                     "latitude": 26.2500,
                     "longitude": 50.6167
+                }
+            ]
+        },
+        {
+            "name": "Bangladesh",
+            "name_ar": "بنغلاديش",
+            "ISO": "BD",
+            "cities": [
+                {
+                    "name":"Dhaka",
+                    "name_ar":"دكا",
+                    "latitude": 23.810332,
+                    "longitude": 90.4125181
+                },
+                {
+                    "name": "Chittagong",
+                    "name_ar": "شيتاغونغ",
+                    "latitude": 22.48750000,
+                    "longitude": 91.96333000
+                }
+            ]
+
+        },
+        {
+            "name" :"Bosnia and Herzegovina",
+            "name_ar":"البوسنة والهرسك",
+            "ISO": "BA",
+            "cities":[
+                {
+                    "name":"Sarajevo",
+                    "name_ar":"سراييفو",
+                    "latitude":  43.84864000,
+                    "longitude": 18.35644000
+                },
+                {
+                    "name": "Banja Luka",
+                    "name_ar": "بانيا لوكا",
+                    "latitude": 44.77842000,
+                    "longitude": 17.19386000
                 }
             ]
         }

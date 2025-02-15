@@ -28,7 +28,6 @@ export default function PrayersTime() {
       <Text>{athan?.data.meta.timezone}</Text>
       <Text>{athan?.data.meta.method.name}</Text>
       <AthanTimes athan={athan} isLoading={isLoading}/>
-
     </View>
   );
 }
