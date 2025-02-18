@@ -1,12 +1,12 @@
 import { View, Text } from "react-native";
 import React from "react";
 import ButtonList from "./ButtonList";
-import MyRadio from "../../assets/my_radio.svg";
-import prayer from "../../assets/prayer.svg";
-import MyQuranBook from "../../assets/quran_book.svg";
-import allahName from "../../assets/allahName.svg";
-import giblaLocation from "../../assets/giblaLocation.svg";
-import michrophone from "../../assets/michrophone.svg";
+import MyRadio from "../../../assets/my_radio.svg";
+import prayer from "../../../assets/prayer.svg";
+import MyQuranBook from "../../../assets/quran_book.svg";
+import allahName from "../../../assets/allahName.svg";
+import giblaLocation from "../../../assets/giblaLocation.svg";
+import michrophone from "../../../assets/michrophone.svg";
 export default function ButtonLists() {
   return (
     <View style={{flex:1}}>

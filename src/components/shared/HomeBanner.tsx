@@ -6,8 +6,6 @@ import {
 } from "react-native";
 import React from "react";
 import momentHijri from "moment-hijri";
-
-
 type Banner = {
   isSalah : 'flex' | 'none'
   isDateShowen: 'flex' | 'none'
@@ -25,7 +23,7 @@ export default function HomeBanner({isSalah, isDateShowen}:Banner) {
           borderTopRightRadius: 10,
           resizeMode: "cover",
         }}
-        source={require("../../assets/islamicBanner.png")}
+        source={require("../../../assets/islamicBanner.png")}
         style={styles.contentContainer}
       >
         <Text style={[styles.sameTxt,{display: isSalah}]}>salah timer  -- here</Text>

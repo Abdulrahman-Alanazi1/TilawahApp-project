@@ -8,7 +8,7 @@ import React, {
   useState,
 } from "react";
 import { FlashList, ViewToken } from "@shopify/flash-list";
-import hafs from "../../assets/json/hafs.json";
+import hafs from "../../../assets/json/hafs.json";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useLocalSearchParams } from "expo-router";
 
