@@ -5,7 +5,7 @@ import SharedHeader from "../../components/shared/SharedHeader";
 
 export default function Settings() {
   return (
-    <View>
+    <View style={{flex:1}}>
       <Stack.Screen
         options={{
           headerShown: true,

@@ -8,11 +8,11 @@ import { Stack } from "expo-router";
 import PagerView from "react-native-pager-view";
 import SalahTime from "../../components/home/SalahTime";
 
-const { width: screenWidth } = Dimensions.get("window"); // Get screen width
 
 export default function index() {
   const pagerRef = useRef<PagerView>(null);
   const [currentPage, setCurrentPage] = useState(0);
+  
   const handlePageChange = (event: { nativeEvent: { position: number } }) => {
     setCurrentPage(event.nativeEvent.position);
   };

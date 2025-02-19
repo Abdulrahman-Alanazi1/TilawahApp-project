@@ -9,9 +9,9 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 SplashScreen.preventAutoHideAsync();
 export default function Homelayout() {
   const [loaded, error] = useFonts({
-    "Kufam-Italic": require("../../assets/fonts/Kufam-Italic.ttf"),
-    'uthmanic_hafs': require("../../assets/fonts/uthmanic_hafs.ttf"),
-    'HafsSmart': require("../../assets/fonts/HafsSmart.ttf"),
+    "Kufam-Italic": require("../assets/fonts/Kufam-Italic.ttf"),
+    'uthmanic_hafs': require("../assets/fonts/uthmanic_hafs.ttf"),
+    'HafsSmart': require("../assets/fonts/HafsSmart.ttf"),
   });
   useEffect(() => {
     if (loaded || error) {

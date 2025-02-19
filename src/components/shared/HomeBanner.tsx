@@ -23,7 +23,7 @@ export default function HomeBanner({isSalah, isDateShowen}:Banner) {
           borderTopRightRadius: 10,
           resizeMode: "cover",
         }}
-        source={require("../../../assets/islamicBanner.png")}
+        source={require("../../assets/islamicBanner.png")}
         style={styles.contentContainer}
       >
         <Text style={[styles.sameTxt,{display: isSalah}]}>salah timer  -- here</Text>

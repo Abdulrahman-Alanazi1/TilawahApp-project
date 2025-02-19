@@ -3,11 +3,10 @@ import React, { useEffect, useState } from "react";
 import { router } from "expo-router";
 import momentHijri from "moment-hijri";
 import { Ionicons } from "@expo/vector-icons";
-import Mosque from "../../../assets/mosque.svg";
-import MosqueView from "../../../assets/mosqueView.svg";
+import Mosque from "../../assets/mosque.svg";
+import MosqueView from "../../assets/mosqueView.svg";
 import useAthan from "../../hooks/useAthan";
 import moment from "moment-hijri";
-
 type salahProp = {
   isSalah: "flex" | "none";
   isDateShowen: "flex" | "none";
