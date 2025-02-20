@@ -2,6 +2,7 @@ import { View, Text } from "react-native";
 import React from "react";
 import { Stack } from "expo-router";
 import SharedHeader from "../../components/shared/SharedHeader";
+import DropdownComponent from "../../components/settings/DropdownComponent";
 
 export default function Settings() {
   return (
@@ -19,6 +20,7 @@ export default function Settings() {
           ),
         }}
       />
+      <DropdownComponent/>
     </View>
   );
 }
