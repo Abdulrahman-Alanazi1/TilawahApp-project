@@ -8,11 +8,19 @@ interface City {
   value: string;
 }
 
-export default function DropdownComponent() {
-  const [selectedCountry, setSelectedCountry] = useState<string | null>(
-    "أرمينيا"
-  );
-  const [selectedCity, setSelectedCity] = useState<string | null>(null);
+interface DropdownComponentProps {
+  selectedCountry: string | null;
+  selectedCity: string | null;
+  onCountryChange: (country: string | null) => void;
+  onCityChange: (city: string | null) => void;
+}
+
+export default function DropdownComponent({
+  selectedCountry,
+  selectedCity,
+  onCountryChange,
+  onCityChange,
+}: DropdownComponentProps) {
   const [cities, setCities] = useState<City[]>([]);
 
   useEffect(() => {
@@ -24,7 +32,7 @@ export default function DropdownComponent() {
         setCities(
           selectedCountryData.cities.map((city) => ({
             label: city.name_ar,
-            value: city.city_id,
+            value: city.name_ar,
           }))
         );
       } else {
@@ -40,14 +48,16 @@ export default function DropdownComponent() {
     value: country.name_ar,
   }));
   return (
-    <View style={{ flex: 1 }}>
-      <View style={{
-        padding:5,
-        backgroundColor:'snow',
-        margin:5,
-        elevation:5,
-        borderRadius:5
-      }}>
+    <View style={{}}>
+      <View
+        style={{
+          padding: 5,
+          backgroundColor: "snow",
+          margin: 5,
+          elevation: 5,
+          borderRadius: 5,
+        }}
+      >
         <Dropdown
           style={styles.dropdown}
           data={countryData}
@@ -56,20 +66,20 @@ export default function DropdownComponent() {
           inputSearchStyle={styles.inputSearchStyle}
           maxHeight={300}
           search
-          
           labelField="label"
           valueField="value"
-          placeholder="Select Country"
+          placeholder="أختر دولتك"
           searchPlaceholder="Search..."
           value={selectedCountry}
           onChange={(item) => {
-            setSelectedCountry(item.value);
-            setSelectedCity(null);
+            onCountryChange(item.value); // Update parent state
+            onCityChange(null);
           }}
         />
         <Dropdown
           style={styles.dropdown}
           data={cities}
+          inverted={false}
           placeholderStyle={styles.placeholderStyle}
           selectedTextStyle={styles.selectedTextStyle}
           inputSearchStyle={styles.inputSearchStyle}
@@ -77,11 +87,11 @@ export default function DropdownComponent() {
           search
           labelField="label"
           valueField="value"
-          placeholder="Select city"
+          placeholder="أختر مدينتك"
           searchPlaceholder="Search..."
           value={selectedCity}
           onChange={(item) => {
-            setSelectedCity(item.value);
+            onCityChange(item.value); // Update parent state
             console.log("Selected City:", item);
           }}
         />
@@ -92,13 +102,17 @@ export default function DropdownComponent() {
 
 const styles = StyleSheet.create({
   dropdown: {
-    margin: 16,
+    margin: 5,
     height: 55,
-    borderBottomColor: "gray",
-    borderBottomWidth: 1,
+    borderWidth: 1,
+    borderRadius: 5,
+    padding: 10,
+    borderColor: "gray",
+
   },
   placeholderStyle: {
     fontSize: 16,
+    margin: 5,
   },
   selectedTextStyle: {
     fontSize: 16,
