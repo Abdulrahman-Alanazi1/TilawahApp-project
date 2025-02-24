@@ -198,6 +198,28 @@
                     "longitude": 17.19386000
                 }
             ]
+        },
+        {
+            "county_id":49,
+            "name" :"Egypt",
+            "name_ar":"مصر",
+            "ISO": "EG",
+            "cities":[
+                {
+                    "city_id":"1EG",
+                    "name":"Cairo",
+                    "name_ar":"القاهرة",
+                    "latitude":  29.95375640,
+                    "longitude": 31.53700030
+                },
+                {
+                    "city_id":"2EG",
+                    "name": "Alexandria",
+                    "name_ar": "الإسكندرية",
+                    "latitude": 31.20176000,
+                    "longitude": 29.91582000
+                }
+            ]
         }
     ]
 }

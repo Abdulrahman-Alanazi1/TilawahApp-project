@@ -5,13 +5,13 @@ import * as NavigationBar from "expo-navigation-bar";
 import * as SplashScreen from "expo-splash-screen";
 import { useFonts } from "expo-font";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-
+import { SettingProvider } from "../../contexts/SettingProvider";
 SplashScreen.preventAutoHideAsync();
 export default function Homelayout() {
   const [loaded, error] = useFonts({
-    "Kufam-Italic": require("../assets/fonts/Kufam-Italic.ttf"),
-    'uthmanic_hafs': require("../assets/fonts/uthmanic_hafs.ttf"),
-    'HafsSmart': require("../assets/fonts/HafsSmart.ttf"),
+    "Kufam-Italic": require("../../assets/fonts/Kufam-Italic.ttf"),
+    uthmanic_hafs: require("../../assets/fonts/uthmanic_hafs.ttf"),
+    HafsSmart: require("../../assets/fonts/HafsSmart.ttf"),
   });
   useEffect(() => {
     if (loaded || error) {
@@ -27,17 +27,21 @@ export default function Homelayout() {
   StatusBar.setBackgroundColor("#9e886f");
   StatusBar.setBarStyle("default");
   return (
-    <GestureHandlerRootView style={{flex:1}}>
-      <View style={{flex:1 }}>
-        <Stack
-          screenOptions={{
-            animation: "slide_from_left", 
-            headerShown:false
-          }}
-        >
-         
-        </Stack>
-      </View>
-    </GestureHandlerRootView>
+    <SettingProvider>
+        <GestureHandlerRootView style={{ flex: 1 }}>
+          <View style={{ flex: 1}}>
+            <Stack
+              screenOptions={{
+                animation: "slide_from_left",
+                headerShown: false,
+              }}
+            >
+              <Stack.Screen name="index" />
+              <Stack.Screen name="Settings" />
+              <Stack.Screen name="PrayersTime" />
+            </Stack>
+          </View>
+        </GestureHandlerRootView>
+    </SettingProvider>
   );
 }

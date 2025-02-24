@@ -8,11 +8,10 @@ import { Stack } from "expo-router";
 import PagerView from "react-native-pager-view";
 import SalahTime from "../../components/home/SalahTime";
 
-
 export default function index() {
   const pagerRef = useRef<PagerView>(null);
   const [currentPage, setCurrentPage] = useState(0);
-  
+
   const handlePageChange = (event: { nativeEvent: { position: number } }) => {
     setCurrentPage(event.nativeEvent.position);
   };
@@ -79,19 +78,11 @@ export default function index() {
   };
   return (
     <View style={styles.container}>
-      <Stack.Screen
-        options={{
-          title: "Home",
-          headerShown: true,
-          header: () => (
-            <SharedHeader
-              title="الرئيسية"
-              fontSize={17}
-              isBackIcon="none"
-              isSettings="flex"
-            />
-          ),
-        }}
+      <SharedHeader
+        title="الرئيسية"
+        fontSize={17}
+        isBackIcon="none"
+        isSettings="flex"
       />
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <HomeBanner isSalah="flex" isDateShowen="none" />

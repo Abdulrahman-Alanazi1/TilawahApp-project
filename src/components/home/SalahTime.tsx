@@ -7,19 +7,24 @@ import Mosque from "../../assets/mosque.svg";
 import MosqueView from "../../assets/mosqueView.svg";
 import useAthan from "../../hooks/useAthan";
 import moment from "moment-hijri";
+
+import { useSettings } from "../../contexts/SettingProvider";
+
 type salahProp = {
   isSalah: "flex" | "none";
   isDateShowen: "flex" | "none";
 };
 export default function SalahTime({ isSalah, isDateShowen }: salahProp) {
+  const {latitude, longitude} = useSettings()
   const [currentDate, setCurrentDate] = useState(moment()); // Store date as moment object
   const [time, setTime] = useState(currentDate.format("DD-MM-YYYY"));
   const hijri =
-    momentHijri(currentDate).format("iD iMMMM (iMM), iYYYY ") + "هج"; // Use currentDate
-  const { athan, isLoading, error } = useAthan(time, 24.774265, 46.738586, 4);
+    momentHijri(currentDate).format("iD iMMMM (iMM), iYYYY ") + "هج";
+    
+  const { athan, isLoading, error } = useAthan(time, latitude, longitude, 4);
 
   useEffect(() => {
-    setTime(currentDate.format("DD-MM-YYYY")); // Update time when currentDate changes
+    setTime(currentDate.format("DD-MM-YYYY")); 
   }, [currentDate]);
 
   const handlePrevDay = () => {
@@ -58,6 +63,9 @@ export default function SalahTime({ isSalah, isDateShowen }: salahProp) {
             <Ionicons name="arrow-forward" size={24} color={"#a89075"} />
           </TouchableOpacity>
         </View>
+        <Text>Latitude: { latitude}</Text>
+        <Text>longitude: { longitude}</Text>
+        <Text>{athan?.data.meta.timezone}</Text>
         {isLoading ? (
           <ActivityIndicator size={'small'} color={'black'}/>
         ): error ? (

@@ -7,27 +7,20 @@ import useAthan from "../../hooks/useAthan";
 import AthanTimes from "../../components/prayersTimes/AthanTimes";
 import moment from "moment-hijri";
 export default function PrayersTime() {
-  const time = moment().format('DD-MM-YYYY')
+  const time = moment().format("DD-MM-YYYY");
   const { athan, isLoading } = useAthan(time, 24.774265, 46.738586, 4);
   return (
     <View style={styles.container}>
-      <Stack.Screen
-        options={{
-          headerShown: true,
-          header: () => (
-            <SharedHeader
-              title="مواعيد الصلاة"
-              fontSize={15}
-              isBackIcon="flex"
-              isSettings="none"
-            />
-          ),
-        }}
+      <SharedHeader
+        title="مواعيد الصلاة"
+        fontSize={15}
+        isBackIcon="flex"
+        isSettings="none"
       />
       <HomeBanner isSalah="none" isDateShowen="flex" />
       <Text>{athan?.data.meta.timezone}</Text>
       <Text>{athan?.data.meta.method.name}</Text>
-      <AthanTimes athan={athan} isLoading={isLoading}/>
+      <AthanTimes athan={athan} isLoading={isLoading} />
     </View>
   );
 }

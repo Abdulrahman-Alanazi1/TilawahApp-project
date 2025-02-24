@@ -12,8 +12,8 @@ const instance = axios.create({
 
 const useAthan = (
   date: string,
-  latitude: number,
-  longitude: number,
+  latitude: number | null,
+  longitude: number | null,
   method: number
 ) => {
   const [athan, setAthan] = useState<AthanObject>();
