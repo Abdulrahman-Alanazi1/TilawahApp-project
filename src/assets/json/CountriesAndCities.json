@@ -220,6 +220,28 @@
                     "longitude": 29.91582000
                 }
             ]
+        },
+        {
+            "county_id":79,
+            "name" :"Indonesia",
+            "name_ar":"إندونيسيا",
+            "ISO": "IDN",
+            "cities":[
+                {
+                    "city_id":"1IDN",
+                    "name":"Jakarta",
+                    "name_ar":"جاكرتا",
+                    "latitude":  -6.21462000,
+                    "longitude": 106.84513000
+                },
+                {
+                    "city_id":"2IDN",
+                    "name": "Surabaya",
+                    "name_ar": "سورابايا",
+                    "latitude": -7.24917000,
+                    "longitude": 112.75083000
+                }
+            ]
         }
     ]
 }
