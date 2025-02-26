@@ -5,6 +5,7 @@ import SharedHeader from "../../components/shared/SharedHeader";
 import DropdownComponent from "../../components/settings/DropdownComponent";
 import countries from "../../assets/json/CountriesAndCities.json";
 import { useSettings } from "../../contexts/SettingProvider";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 
 export default function Settings() {
@@ -21,9 +22,32 @@ export default function Settings() {
   const [selectedCity, setSelectedCity] = useState<string | null>(defaultCityName||null);
   const [cityData, setCityData] = useState<any | null>(defaultCity || null);
   const { setLatitude, setLongitude } = useSettings();
+  const [isLoading, setIsLoading] = useState(true); // Add loading state
 
+  useEffect(() =>{
+    const getStoredValue = async () => {
+      try {
+        const storedCountry = await AsyncStorage.getItem('selectedCountry')
+        const storedCity = await AsyncStorage.getItem('selectedCity')
+
+        if(storedCountry){
+          setSelectedCountry(storedCountry)
+        }
+        if(storedCity) {
+          setSelectedCity(storedCity)
+        }
+      } catch (error) {
+        console.error('Error retrieving stored values:', error);
+      }finally{
+        setIsLoading(false)
+      }
+    }
+
+    getStoredValue()
+  }, [])
+  
   useEffect(() => {
-    if (selectedCity) {
+    if (!isLoading && selectedCity) {
       const selectedCountryData = countries.countries.find(
         (country) => country.name_ar === selectedCountry
       );
@@ -48,8 +72,11 @@ export default function Settings() {
       setLatitude(null);
       setLongitude(null);
     }
-  }, [selectedCountry, selectedCity, setLatitude, setLongitude]);
+  }, [selectedCountry, selectedCity, setLatitude, setLongitude, isLoading]);
 
+  if (isLoading) {
+        return <View><Text>Loading...</Text></View>; // Render loading indicator
+    }
   return (
     <View style={{ flex: 1 }}>
       <SharedHeader

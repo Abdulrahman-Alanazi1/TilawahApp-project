@@ -1,5 +1,6 @@
-import React, { createContext, ReactNode, useState, useContext } from "react";
+import React, { createContext, ReactNode, useState, useContext, useEffect } from "react";
 import countries from "../assets/json/CountriesAndCities.json";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export interface SettingContextProps {
   latitude: number | null;
@@ -24,6 +25,35 @@ export const SettingProvider: React.FC<{ children: ReactNode }> = ({
   const [latitude, setLatitude] = useState<number | null>(defaultCity?.latitude || null);
   const [longitude, setLongitude] = useState<number | null>( defaultCity?.longitude ||null);
 
+  useEffect(() => {
+    const loadStoredValues = async () => {
+        try {
+            const storedCountry = await AsyncStorage.getItem('selectedCountry');
+            const storedCity = await AsyncStorage.getItem('selectedCity');
+
+            if (storedCountry && storedCity) {
+                const foundCountry = countries.countries.find(
+                    (country) => country.name_ar === storedCountry
+                );
+                const foundCity = foundCountry?.cities.find(
+                    (city) => city.name_ar === storedCity
+                );
+
+                if (foundCity) {
+                    setLatitude(foundCity.latitude);
+                    setLongitude(foundCity.longitude);
+                }
+            } else if (defaultCity) {
+              setLatitude(defaultCity.latitude);
+              setLongitude(defaultCity.longitude);
+            }
+        } catch (error) {
+            console.error('Error loading stored values:', error);
+        }
+    };
+
+    loadStoredValues();
+}, []);
   const value: SettingContextProps = {
     latitude,
     longitude,

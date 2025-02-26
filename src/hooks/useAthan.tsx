@@ -18,13 +18,16 @@ const useAthan = (
 ) => {
   const [athan, setAthan] = useState<AthanObject>();
   const [isLoading, setIsLoading] = useState(true);
-  const [timeFormat, setTimeFormat] = useState<"24" | "12">("24"); // Default to 24-hour format
-  const [error, setError] = useState<string | null>(null); // Add an error state
+  const [error, setError] = useState<string | null>(null); 
 
   useEffect(() => {
     const athanTimes = async () => {
-      setIsLoading(true); // Set loading to true before fetching
-      setError(null); // Clear any previous errors
+      if (latitude === null || longitude === null) {
+        setIsLoading(false);
+        return;
+    }
+      setIsLoading(true); 
+      setError(null); 
 
       try {
         const response = await instance.get<AthanObject>(
@@ -36,7 +39,7 @@ const useAthan = (
         setIsLoading(false);
       } catch (e: any) {
         console.log("something Went Wrong in useAthan:", e);
-        setError(e.message || "An error occurred"); // Set the error message
+        setError(e.message || "An error occurred"); 
       }finally {
         setIsLoading(false);
       }

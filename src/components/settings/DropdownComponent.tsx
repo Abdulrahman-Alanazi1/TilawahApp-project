@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import React, { useEffect, useState } from "react";
 import countries from "../../assets/json/CountriesAndCities.json";
 import { Dropdown } from "react-native-element-dropdown";
-
+import AsyncStorage from "@react-native-async-storage/async-storage";
 interface City {
   label: string;
   value: string;
@@ -22,6 +22,23 @@ export default function DropdownComponent({
   onCityChange,
 }: DropdownComponentProps) {
   const [cities, setCities] = useState<City[]>([]);
+  const storeSelectedValue = async (country: string | null, city:string | null) => {
+    try{
+      if(country && city){
+        await AsyncStorage.setItem('selectedCountry', country)
+        await AsyncStorage.setItem('selectedCity', city)
+      }else{
+        await AsyncStorage.removeItem('selectedCountry')
+        await AsyncStorage.removeItem('selectedCity')
+      }
+    }catch(error: unknown){
+      console.error('Error storing selected values:', error);
+    }
+  }
+
+  useEffect(()=>{
+    storeSelectedValue(selectedCountry,selectedCity)
+  },[selectedCountry,selectedCity])
 
   useEffect(() => {
     if (selectedCountry) {
@@ -47,8 +64,10 @@ export default function DropdownComponent({
     label: country.name_ar,
     value: country.name_ar,
   }));
+
+  
   return (
-    <View style={{}}>
+    <View>
       <View
         style={{
           padding: 5,
@@ -72,7 +91,7 @@ export default function DropdownComponent({
           searchPlaceholder="Search..."
           value={selectedCountry}
           onChange={(item) => {
-            onCountryChange(item.value); // Update parent state
+            onCountryChange(item.value);
             onCityChange(null);
           }}
         />
