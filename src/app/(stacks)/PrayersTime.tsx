@@ -6,9 +6,11 @@ import HomeBanner from "../../components/shared/HomeBanner";
 import useAthan from "../../hooks/useAthan";
 import AthanTimes from "../../components/prayersTimes/AthanTimes";
 import moment from "moment-hijri";
+import { useSettings } from "../../contexts/SettingProvider";
 export default function PrayersTime() {
+    const {latitude, longitude} = useSettings()
   const time = moment().format("DD-MM-YYYY");
-  const { athan, isLoading } = useAthan(time, 24.774265, 46.738586, 4);
+  const { athan, isLoading } = useAthan(time, latitude, longitude, 4);
   return (
     <View style={styles.container}>
       <SharedHeader

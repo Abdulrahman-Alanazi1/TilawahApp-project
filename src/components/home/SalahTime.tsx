@@ -63,9 +63,6 @@ export default function SalahTime({ isSalah, isDateShowen }: salahProp) {
             <Ionicons name="arrow-forward" size={24} color={"#a89075"} />
           </TouchableOpacity>
         </View>
-        <Text>Latitude: { latitude}</Text>
-        <Text>longitude: { longitude}</Text>
-        <Text>{athan?.data.meta.timezone}</Text>
         {isLoading ? (
           <ActivityIndicator size={'small'} color={'black'}/>
         ): error ? (

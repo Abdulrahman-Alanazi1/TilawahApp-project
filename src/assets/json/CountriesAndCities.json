@@ -242,6 +242,74 @@
                     "longitude": 112.75083000
                 }
             ]
+        },
+        {
+            "county_id":80,
+            "name" :"Iran",
+            "name_ar":"إيران",
+            "ISO": "IRN",
+            "cities":[
+                {
+                    "city_id":"1IRN",
+                    "name":"Tehran",
+                    "name_ar":"طهران",
+                    "latitude":  35.72484160,
+                    "longitude": 51.38165300
+                },
+                {
+                    "city_id":"2IRN",
+                    "name": "Mashhad",
+                    "name_ar": "مشهد",
+                    "latitude": 36.31559000,
+                    "longitude": 59.56796000
+                }
+            ]
+        },
+        {
+            "county_id":81,
+            "name" :"Iraq",
+            "name_ar":"العراق",
+            "ISO": "IRQ",
+            "cities":[
+                {
+                    "city_id":"1IRQ",
+                    "name":"baghdad",
+                    "name_ar":"بغداد",
+                    "latitude":  33.34058000,
+                    "longitude": 44.40088000
+                },
+                {
+                    "city_id":"2IRQ",
+                    "name": "Basra",
+                    "name_ar": "بصرة",
+                    "latitude": 30.50852000,
+                    "longitude": 47.78040000
+                }
+            ]
+        },
+        {
+            "county_id":87,
+            "name" :"Jordan",
+            "name_ar":"الأردن",
+            "ISO": "JOR",
+            "cities":[
+                {
+                    "city_id":"1JOR",
+                    "name":"Amman",
+                    "name_ar":"عمان",
+                    "latitude":  31.95522000,
+                    "longitude": 35.94503000
+                },
+                {
+                    "city_id":"2JOR",
+                    "name": "Zarqa",
+                    "name_ar": "الزرقاء",
+                    "latitude": 32.06085050,
+                    "longitude": 36.09421210
+                }
+            ]
         }
+        
+
     ]
 }
