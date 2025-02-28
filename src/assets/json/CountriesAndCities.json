@@ -308,6 +308,65 @@
                     "longitude": 36.09421210
                 }
             ]
+        },
+        {
+            "county_id":88,
+            "name" :"Kazakhstan",
+            "name_ar":"كازاخستان",
+            "ISO": "KAZ",
+            "cities":[
+                {
+                    "city_id":"1KAZ",
+                    "name":"Almaty",
+                    "name_ar":"ألماتي",
+                    "latitude":  43.25667000,
+                    "longitude": 76.92861000
+                },
+                {
+                    "city_id":"2KAZ",
+                    "name": "Karaganda",
+                    "name_ar": "كاراقندا",
+                    "latitude": 49.8333,
+                    "longitude": 73.1658
+                }
+            ]
+        },
+        {
+            "county_id":89,
+            "name" :"Kenya",
+            "name_ar":"كينيا",
+            "ISO": "KEN",
+            "cities":[
+                {
+                    "city_id":"1KEN",
+                    "name":"Nairobi",
+                    "name_ar":"نيروبي",
+                    "latitude":  -1.28333000,
+                    "longitude": 36.81667000
+                },
+                {
+                    "city_id":"2KEN",
+                    "name": "Mombasa",
+                    "name_ar": "موباسا",
+                    "latitude": -3.97682910,
+                    "longitude": 39.71371810
+                }
+            ]
+        },
+        {
+            "county_id":91,
+            "name" :"Kuwait",
+            "name_ar":"الكويت",
+            "ISO": "KWT",
+            "cities":[
+                {
+                    "city_id":"1KWT",
+                    "name":"Kuwait",
+                    "name_ar":"الكويت",
+                    "latitude":  29.50000000,
+                    "longitude": 45.75000000
+                }
+            ]
         }
         
 
