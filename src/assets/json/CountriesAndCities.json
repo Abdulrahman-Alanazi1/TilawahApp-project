@@ -367,6 +367,94 @@
                     "longitude": 45.75000000
                 }
             ]
+        },
+        {
+            "county_id":95,
+            "name" :"Lebanon",
+            "name_ar":"لبنان",
+            "ISO": "LBN",
+            "cities":[
+                {
+                    "city_id":"1LBN",
+                    "name":"Beirut",
+                    "name_ar":"بيروت",
+                    "latitude":  33.89332000,
+                    "longitude": 35.50157000
+                },
+                {
+                    "city_id":"2LBN",
+                    "name": "Tripoli",
+                    "name_ar": "طرابولس",
+                    "latitude": 34.43352000,
+                    "longitude": 35.84415000
+                }
+            ]
+        },
+        {
+            "county_id":98,
+            "name" :"Libya",
+            "name_ar":"ليبيا",
+            "ISO": "LBY",
+            "cities":[
+                {
+                    "city_id":"1LBY",
+                    "name":"Tripoli",
+                    "name_ar":"طرابلس",
+                    "latitude":  32.88743000,
+                    "longitude": 13.18733000
+                },
+                {
+                    "city_id":"2LBY",
+                    "name": "Benghazi",
+                    "name_ar": "بنغازي",
+                    "latitude": 32.11942420,
+                    "longitude": 20.08679090
+                }
+            ]
+        },
+        {
+            "county_id":117,
+            "name" :"Morocco",
+            "name_ar":"المغرب",
+            "ISO": "MAR",
+            "cities":[
+                {
+                    "city_id":"1MAR",
+                    "name":"Rabat",
+                    "name_ar":"الرباط",
+                    "latitude":  33.96919900,
+                    "longitude": -6.92730290
+                },
+                {
+                    "city_id":"2MAR",
+                    "name": "Marrakech",
+                    "name_ar": "مراكش",
+                    "latitude": 31.63460230,
+                    "longitude": -8.07789320
+                }
+            ]
+        },
+        {
+            "county_id":131,
+            "name" :"Oman",
+            "name_ar":"عُمان",
+            "ISO": "OMN",
+            "cities":[
+                {
+                    "city_id":"1OMN",
+                    "name":"Muscat",
+                    "name_ar":"مسقط",
+                    "latitude":  23.58413000,
+                    "longitude": 58.40778000
+                },
+                {
+                    "city_id":"2OMN",
+                    "name": "Salalah",
+                    "name_ar": "صلالة",
+                    "latitude": 17.0151,
+                    "longitude": 54.0924
+                }
+            ]
         }
         
 
