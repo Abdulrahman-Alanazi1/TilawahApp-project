@@ -1,4 +1,4 @@
-﻿# TilawahApp-project (Delayed)
+﻿# TilawahApp-project (Looking for Contributors)
 
 Welcome to the Tilawah App! This app is designed to be a helpful tool for Muslims in their daily lives, providing convenient access to essential resources.  Currently, the app features:
 
